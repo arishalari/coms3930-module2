@@ -1,7 +1,9 @@
 # Dialpick
  
 A safe-cracking game played with a physical dial. Turn a potentiometer to find three secret numbers, using a hot-to-cold indicator as the clue.
- 
+
+My goal was to make players feel like they're cracking a real safe while maintaining a retro aesthetic. The potentiometer mimics a real-life dial, so the game feels physical. It's simple enough to understand in seconds, but the timer and the clues keep the pressure on, so it feels like a heist.
+
 Blog post: [xxxx]
  
 ADD GIF
@@ -20,6 +22,7 @@ The ESP32 reads a potentiometer (the dial), a joystick (next number), and a butt
  
 Wire everything to the ESP32 on a breadboard:
 
+- Power: 3V pin to the power rail, and two GND pins to the ground rails (one on each side of the breadboard)
 - Potentiometer: outer pins to 3V and GND, middle pin to GPIO 36
 - Joystick: GND to GND, VCC to 3V, VRx to GPIO 39, VRy to GPIO 32
 - Button: one side to GPIO 2, the other side to GND
@@ -35,4 +38,5 @@ ADD FRITZ DIAGRAM
 
 ## Playing it
 - Turn the dial to find each secret number, press the button to lock it in, and push the joystick right for the next one.
-- You have 45 seconds, and a wrong number costs -5 seconds.
+- A white marker slides along the bar from blue (cold) to red (hot) as you get closer. When you're within 2 numbers of the answer, the bar gets a green outline. That's a five-number zone, but only the exact number counts.
+- You have 45 seconds, and a wrong number costs 5.
