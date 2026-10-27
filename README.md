@@ -27,7 +27,7 @@ Wire everything to the ESP32 on a breadboard:
 - Joystick: GND to GND, VCC to 3V, VRx to GPIO 39, VRy to GPIO 32
 - Button: one side to GPIO 2, the other side to GND
  
-ADD FRITZ DIAGRAM
+![Circuit diagram](media/fritz_sketch.png)
 
 ## Running it
  
