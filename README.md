@@ -15,7 +15,7 @@ The ESP32 reads a potentiometer, a joystick, and a button, and sends the reading
 - ESP32 LilyGO T-Display
 - Potentiometer, joystick module, push button
 - Breadboard and jumper wires
-- Arduino IDE with ESP32
+- Arduino IDE with ESP32 board support
 - Processing
   
 ## Setup
@@ -32,11 +32,14 @@ Wire everything to the ESP32 on a breadboard:
 ## Running it
  
 1. Upload `code/dialpick-esp32/dialpick-esp32.ino` to the board from the Arduino IDE.
-2. Make sure the Serial Monitor is closed. 
+2. Check the Serial Monitor to confirm you're receiving numbers, then close it.
 3. Open `code/dialpick-processing/dialpick-processing.pde` in Processing and run it.
-4. The sketch prints the available serial ports in the console. In `setup()`, change the number in `Serial.list()[2]` to match your board's port.
+4. The sketch prints the available serial ports in the console. In `setup()`, change the number in `Serial.list()[2]` to match your board's port. Make sure both sketches use a baud rate of 115200.
 
 ## Playing it
 - Turn the dial to find each secret number, press the button to lock it in, and push the joystick right for the next one.
-- A white marker slides along the bar from blue (cold) to red (hot) as you get closer. When you're within 2 numbers of the answer, the bar gets a green outline. That's a five-number zone, but only the exact number counts.
+- A white marker on the bar jumps between blue (cold) and red (hot) as you get closer. When you're within 2 numbers of the answer, the bar gets a green outline. That's a five-number zone, but only the exact number counts.
 - You have 45 seconds, and a wrong number locked in costs 5s.
+
+##Acknowledgment
+- AI acknowledgment: xx
