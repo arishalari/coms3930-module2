@@ -1,15 +1,15 @@
 # Dialpick
  
-A safe-cracking game played with a physical dial. Turn a potentiometer to find three secret numbers, using a hot-to-cold indicator as the clue.
+A safe-cracking game played with a physical dial. Find three secret numbers using a hot-to-cold indicator as the clue.
 
-My goal was to make players feel like they're cracking a real safe while maintaining a retro aesthetic. The potentiometer mimics a real-life dial, so the game feels physical. It's simple enough to understand in seconds, but the timer and the clues keep the pressure on, so it feels like a heist.
+My goal was to make players feel like they're cracking a real safe, with a retro aesthetic. The real dial makes the game feel physical, and the timer keeps the pressure on, so it feels like a heist.
 
 Blog post: [xxxx]
  
 ADD GIF
  
-The ESP32 reads a potentiometer (the dial), a joystick (next number), and a button (lock in answer), and sends them to a laptop over serial. A Processing sketch reads that data and runs the game.
- 
+The ESP32 reads a potentiometer, a joystick, and a button, and sends the readings to a laptop over serial. A Processing sketch reads them and runs the game.
+
 ## What you need
  
 - ESP32 LilyGO T-Display
@@ -39,4 +39,4 @@ ADD FRITZ DIAGRAM
 ## Playing it
 - Turn the dial to find each secret number, press the button to lock it in, and push the joystick right for the next one.
 - A white marker slides along the bar from blue (cold) to red (hot) as you get closer. When you're within 2 numbers of the answer, the bar gets a green outline. That's a five-number zone, but only the exact number counts.
-- You have 45 seconds, and a wrong number costs 5.
+- You have 45 seconds, and a wrong number locked in costs 5s.
