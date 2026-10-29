@@ -6,7 +6,7 @@ My goal was to make players feel like they're cracking a real safe, with a retro
 
 Blog post: [xxxx]
  
-![Dialpick gameplay](media/xxxxx)
+![Dialpick gameplay](media/full_demo.gif)
 
 The ESP32 reads a potentiometer, a joystick, and a button, and sends the readings to a laptop over serial. A Processing sketch reads them and runs the game.
 
