@@ -41,5 +41,5 @@ Wire everything to the ESP32 on a breadboard:
 - A white marker on the bar jumps between blue (cold) and red (hot) as you get closer. When you're within 2 numbers of the answer, the bar gets a green outline. That's a five-number zone, but only the exact number counts.
 - You have 45 seconds, and a wrong number locked in costs 5s.
 
-##Acknowledgment
+## Acknowledgment
 - AI acknowledgment: xx
