@@ -4,8 +4,8 @@ A safe-cracking game played with a physical dial. Find three secret numbers usin
 
 My goal was to make players feel like they're cracking a real safe, with a retro aesthetic. The real dial makes the game feel physical, and the timer keeps the pressure on, so it feels like a heist.
 
-Blog post: [(https://glossy-frame-d4e.notion.site/Interactive-Devices-Dialpick-4066d5e59d398084aeb0de26d94f051b)]
- 
+Blog post: [Interactive Devices: Dialpick](https://glossy-frame-d4e.notion.site/Interactive-Devices-Dialpick-4066d5e59d398084aeb0de26d94f051b)
+
 ![Dialpick gameplay](media/demo.gif)
 
 The ESP32 reads a potentiometer, a joystick, and a button, and sends the readings to a laptop over serial. A Processing sketch reads them and runs the game.
@@ -42,4 +42,7 @@ Wire everything to the ESP32 on a breadboard:
 - You have 45 seconds, and a wrong number locked in costs 5s.
 
 ## Acknowledgment
-- AI acknowledgment: xx
+- AI acknowledgment
+Tool and model: Claude (Anthropic), Claude Sonnet 5.5
+
+I used Claude to help troubleshoot problems getting the ESP32 and Processing to communicate. I tested and edited everything, and I made the design and game rule decisions. More detail is in the blog post.
