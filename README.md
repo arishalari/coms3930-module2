@@ -4,7 +4,7 @@ A safe-cracking game played with a physical dial. Find three secret numbers usin
 
 My goal was to make players feel like they're cracking a real safe, with a retro aesthetic. The real dial makes the game feel physical, and the timer keeps the pressure on, so it feels like a heist.
 
-Blog post: [xxxx]
+Blog post: [(https://glossy-frame-d4e.notion.site/Interactive-Devices-Dialpick-4066d5e59d398084aeb0de26d94f051b)]
  
 ![Dialpick gameplay](media/demo.gif)
 
